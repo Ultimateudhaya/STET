@@ -12,9 +12,17 @@ def login():
 def signup():
    return render_template("signup.html")
 
-@app.route('/header',methods=['GET',"POST"])
-def header():
+@app.route('/home',methods=['GET',"POST"])
+def home():
    return render_template("home.html")
+
+@app.route('/application',methods=['GET',"POST"])
+def application():
+   return render_template("application.html")
+
+@app.route('/upload',methods=['GET',"POST"])
+def document_upload():
+   return render_template("document_upload.html")
 
 if __name__ == "__main__":
    app.config['TEMPLATES_AUTO_RELOAD'] = True
