@@ -1,4 +1,4 @@
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: fixed; height:70px; width: 1600px;">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -9,19 +9,18 @@
               <a href="#" class="pull-left"><img src="static/styles/stet_logo(modified).jpg" width="50" height="50"></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">HOME</a>
+              <a class="nav-link" href="{{ url_for('home') }}">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">APPLY</a>
+                <a class="nav-link" href="#">ABOUT US</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">RESULTS</a>
+                <a class="nav-link" href="{{ url_for('contact') }}">CONTACT US</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">CHECK APPLIED FORM</a>
-            </li>
-            </ul>
-                <a class="nav-link" href="#">CONTACT US</a>
+              <a class="nav-link" href="#">LOGOUT</a>
+          </li>
+          </ul>
             
         </div>
       </nav>
